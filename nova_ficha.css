@@ -45,8 +45,18 @@ p{
 }
 
 /* ID */
-#foto{
-    height: 100%;
-    width: 80%;
-    background-color: lightblue;
+#visualizacao{
+    width: 300px;
+    height: 200px;
+}
+#salvar{
+    padding: 2%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#cancelar{
+    padding: 1%;
+    border: 1px solid darkgrey;
+    border-radius: 2px;
 }
