@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="receita.css">
+
+    <title>Receita</title>
+</head>
+<body>
+    <div class="container fundo">
+        <header>    
+            <div class="dropdown">
+                <button class="btn" type="button" data-toggle="dropdown" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <li><a href="#">Usuários</a></li>
+                    <li><a href="#">Fichas</a></li>
+                    <li><a href="#">Ingredientes</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </header>
+        <img src="logo2.png">
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row titulo">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><h1>Receita</h1></div>
+        </div>
+
+        <form action="receita.php" method="POST">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4 conteudo">
+                    <h4>Receita de:</h4><br>
+                    <div id="tabela">
+                        <table>
+                            <tr>
+                                <th>Ingredientes</th>
+                                <th>Quantidade</th>
+                                
+                            </tr>
+                            <tr>
+                                <td>Farinha</td>
+                                <td>120g   
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Farinha</td>
+                                <td>120g   
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Farinha</td>
+                                <td>120g   
+                                    <button type="button" class="btn btn-default" aria-label="Left Align">
+                                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>Farinha</td>
+                                    <td>120g   
+                                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                        </table>
+                    </div>
+                    <br>
+                    <div>
+                        <label >Ingrediente</label>
+                        <select id="seletor">
+                            <option value="1">USA</option>
+                            <option value="2">Germany</option>
+                            <option value="3">France</option>
+                            <option value="4">Poland</option>
+                            <option value="5">Japan</option>
+                        </select>
+                    </div>
+
+                    
+                    <input id="quantidade" type="number" placeholder="Quantidade">
+                    <label>g</label>
+
+                    <button id="adicionar">Adicionar</button>
+                    <button id="novo">Cadastrar novo ingrediente</button>
+                </div>
+                        
+                <div class="col-md-4 conteudo">
+                        <h4>Pré-visualização:</h4><br>
+                        <div id="tabela">
+                            <table>
+                                <tr>
+                                    <th>Ingredientes</th>
+                                    <th>Quantidade Real</th>
+                                    <th>Quantidade </th>
+                                </tr>
+                                <tr>
+                                    <td>Farinha</td>
+                                    <td>118g</td>
+                                    <td>120g   
+                                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Farinha</td>
+                                    <td>118g</td>
+                                    <td>120g   
+                                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Farinha</td>
+                                    <td>118g</td>
+                                    <td>120g   
+                                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Farinha</td>
+                                    <td>118g</td>
+                                    <td>120g   
+                                        <button type="button" class="btn btn-default" aria-label="Left Align">
+                                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    <br>
+                    <h5>Adicionar manualmente:</h5>
+                    <input id="nutriente" type="text" placeholder="Nutriente">
+                    <input id="real" type="text" placeholder="Qtde real">
+                    <input id="arredondada" type="text" placeholder="Qtde arredondada">
+                    <button>OK</button>
+                    <br><br>
+                    <h4>Peso final da receita:_______</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-3">
+                    <br>
+                    <button type="button" id="cancelar" >Cancelar</button>
+                    <button type="submit" id="salvar">Salvar e continuar</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <footer class="container">
+        <p>Desenvolvido por AUTOJUN</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
